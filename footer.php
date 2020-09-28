@@ -25,6 +25,7 @@
     NexT.Mist
   </a>
 </div>
+<p>Site load time is：<?php echo timer_stop();?></p>
        </div>
 </footer>
 <div class="back-to-top"></div>
