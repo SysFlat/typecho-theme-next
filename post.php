@@ -16,7 +16,9 @@
                         发表于
                         <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time>
                     </span>
-
+                     <span class="post-time">
+                        &nbsp; | &nbsp;最近修改于<?php echo date('Y-m-d' , $this->modified); ?>
+                    </span>
 
                     <span class="post-category" >
                       &nbsp; | &nbsp; 分类于
@@ -48,7 +50,13 @@
     </span>
 
 </div>
-
+<blockquote class="blockquote-center" style = "font-weight:bold;font-size:20px;color: #333;padding: 18px;">完</blockquote>
+        
+<div class="post-well" style="background-color:#f6f6f6;padding:10px;margin-bottom: 10px;white-space: nowrap;">
+    <p>文章版权：<a style="color:#15A7F0;" href="<?php $this->options->siteUrl() ?>"><?php $this->options->title() ?> - <?php $this->options->description() ?> </a></p>
+    <p>本文链接：<a  style="color:#15A7F0;"href="<?php $this->permalink() ?>"><?php $this->permalink() ?></a></p>
+    <p>版权声明：本文为作者原创，转载请注明文章原始出处 !</p>
+</div>
 <footer class="post-footer">
 
     <div class="post-tags">

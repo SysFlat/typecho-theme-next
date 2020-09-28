@@ -31,6 +31,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <?php $this->date('Y-m-d'); ?>
           </time>
         </span>
+     <span class="post-time">
+        &nbsp; | &nbsp;最近修改于<?php echo date('Y-m-d' , $this->modified); ?>
+    </span>        
         <span class="post-category" >
             &nbsp; | &nbsp; 分类于
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
