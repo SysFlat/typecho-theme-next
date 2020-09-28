@@ -19,13 +19,17 @@
   <?php _e('由 <a class="theme-link" href="http://www.typecho.org">Typecho</a> 强力驱动'); ?>
 </div>
 
-<div class="theme-info">
+<div class="powered-by">
   主题 -
   <a class="theme-link" href="https://github.com/zgq354/typecho-theme-next">
     NexT.Mist
   </a>
 </div>
-<p>Site load time is：<?php echo timer_stop();?></p>
+<div class="powered-by">
+  <?php PageViews_Plugin::showPageViews(); ?>
+</div>
+Site load time is：<?php echo timer_stop();?>
+
        </div>
 </footer>
 <div class="back-to-top"></div>
