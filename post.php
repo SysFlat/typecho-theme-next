@@ -23,9 +23,9 @@
                     <span class="post-category" >
                       &nbsp; | &nbsp; 分类于
 
-                      <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+						<span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                        <?php $this->category(' , '); ?>
-                   </span>
+						</span>
 
 
                </span>
@@ -37,7 +37,10 @@
                 <?php else: ?>
                 <a rel="nofollow" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('暂无评论', '1 条评论', '%d 条评论'); ?></a>
                 <?php endif; ?>
-       </span>
+				</span>
+				<span class="post-time">
+					&nbsp; | &nbsp;<?php Postviews($this); ?>
+				</span>
 
       </div>
   </header>

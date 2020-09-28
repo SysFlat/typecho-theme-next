@@ -48,6 +48,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
               <a rel="nofollow" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('暂无评论', '1 条评论', '%d 条评论'); ?></a>
               <?php endif; ?>
        </span>
+		<span class="post-time">
+			&nbsp; | &nbsp;<?php Postviews($this); ?>
+		</span>	   
       </div>
     </header>
 
