@@ -8,6 +8,11 @@
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder"><a href="<?php $this->options->siteUrl(); ?>"><?php if($this->options->next_name) $this->options->next_name(); else $this->options->title(); ?></a></span>
+        
+<?php if ($this->options->next_icp) {?>
+      <span > - </span>
+      <a class="theme-link" href="http://www.miibeian.gov.cn/" ><?php $this->options->next_icp(); ?></a>
+  <?php }?>
 </div>
 
 <div class="powered-by">
@@ -52,10 +57,10 @@
 <script type="text/javascript" src="<?php $this->options->themeUrl('/js/lazyload.js');?>"></script>
 <script type="text/javascript">
 $(function () {
-	$("#posts").find('img').lazyload({
-		placeholder: "<?php $this->options->themeUrl('/images/loading.gif');?>",
-		effect: "fadeIn"
-	});
+    $("#posts").find('img').lazyload({
+        placeholder: "<?php $this->options->themeUrl('/images/loading.gif');?>",
+        effect: "fadeIn"
+    });
 });
 </script>
 <script type="text/javascript" src="<?php $this->options->themeUrl('/js/bootstrap.js?v=0.4.5.2');?>"></script>

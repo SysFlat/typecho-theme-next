@@ -10,9 +10,9 @@ function themeConfig($form) {
     $form->addInput($next_name);
 
 
-    $next_gravatar = new Typecho_Widget_Helper_Form_Element_Text('next_gravatar', NULL, '', _t('侧边栏头像'), _t('填写 Gravatar 头像的邮箱地址'));
+    $next_gravatar = new Typecho_Widget_Helper_Form_Element_Text('next_gravatar', NULL, '', _t('侧边栏头像'), _t('填写头像地址'));
     $next_gravatar->input->setAttribute('class', 'w-100 mono');
-    $form->addInput($next_gravatar->addRule('email', '请填写一个邮箱地址'));
+    $form->addInput($next_gravatar);
 
     $next_tips = new Typecho_Widget_Helper_Form_Element_Text('next_tips', NULL, '一个高端大气上档次的网站', _t('站点描述'), _t('将显示在侧边栏的昵称下方'));
     $form->addInput($next_tips);

@@ -13,7 +13,7 @@ Typecho_Widget::widget('Widget_Stat')->to($stat);
     <div class="sidebar-inner">
       <section class="site-overview sidebar-panel <?php if(!$this->is('post')) echo "sidebar-panel-active";?>">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="<?php echo getGravatar($this->options->next_gravatar,160); ?>" alt="<?php $this->options->next_name(); ?>" itemprop="image"/>
+          <img class="site-author-image" src="<?php $this->options->next_gravatar(); ?>" alt="<?php $this->options->next_name(); ?>" itemprop="image"/>
           <p class="site-author-name" itemprop="name"><?php $this->options->next_name(); ?></p>
       </div>
       <p class="site-description motion-element" itemprop="description"><?php $this->options->next_tips(); ?></p>
