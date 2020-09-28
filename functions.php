@@ -16,7 +16,12 @@ function themeConfig($form) {
 
     $next_tips = new Typecho_Widget_Helper_Form_Element_Text('next_tips', NULL, '一个高端大气上档次的网站', _t('站点描述'), _t('将显示在侧边栏的昵称下方'));
     $form->addInput($next_tips);
-
+    
+    //ICP备案号
+    $next_icp = new Typecho_Widget_Helper_Form_Element_Text('next_icp', NULL, '', _t('ICP备案号'));
+    $next_icp->input->setAttribute('class', 'w-100 mono');
+    $form->addInput($next_icp);
+    
     $next_cdn = new Typecho_Widget_Helper_Form_Element_Text('next_cdn', NULL, $siteUrl, _t('CDN 镜像地址'), _t('静态文件 CDN 镜像加速地址，加速js和css，如七牛，又拍云等<br>格式参考：'.$siteUrl.'<br>不用请留空或者保持默认'));
     $form->addInput($next_cdn);
 
