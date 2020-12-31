@@ -11,7 +11,7 @@
         
 <?php if ($this->options->next_icp) {?>
       <span > - </span>
-      <a class="theme-link" href="http://www.miibeian.gov.cn/" ><?php $this->options->next_icp(); ?></a>
+      <a class="theme-link" href="https://beian.miit.gov.cn/" ><?php $this->options->next_icp(); ?></a>
   <?php }?>
 </div>
 
